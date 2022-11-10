@@ -18305,6 +18305,16 @@ header::after {
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
+.c-homeabout {
+  margin-top: 20rem;
+}
+.c-homeabout h1, .c-homeabout .h1 {
+  margin-bottom: 2rem;
+}
+.c-homeabout span {
+  margin-left: 6rem;
+}
+
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
