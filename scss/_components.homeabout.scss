@@ -1,9 +1,41 @@
 .c-homeabout {
   margin-top: 20rem;
+  margin-bottom: 10rem;
   h1 {
     margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+    &::before {
+      top: 1.5rem;
+      left: -1rem;
+      width: 50%;
+    }
   }
   span {
     margin-left: 6rem;
+  }
+  &__imgcontainer {
+    position: relative;
+    &::before {
+      content: "";
+      width: 55%;
+      height: 80%;
+      background-color: $color-blue;
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+  }
+  &__img {
+    &--1 {
+      width: 80%;
+      float: right;
+      margin-bottom: 5rem;
+    }
+    &--2 {
+      width: 60%;
+    }
   }
 }

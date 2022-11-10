@@ -18225,6 +18225,7 @@ body {
   font-size: 1rem;
   font-family: "Crimson Text", serif;
   color: #151618;
+  background-color: #F7F7F7;
 }
 
 a {
@@ -18254,7 +18255,7 @@ header {
 header img {
   object-fit: cover;
   width: 100%;
-  height: 80%;
+  height: 80vh;
   margin-top: 5rem;
 }
 header h1, header .h1 {
@@ -18292,7 +18293,7 @@ header::after {
   content: "";
   position: absolute;
   width: 0.2rem;
-  height: 10rem;
+  height: 20vh;
   background-color: #FFFFFF;
   bottom: 0;
   right: 50%;
@@ -18307,12 +18308,47 @@ header::after {
 /*---------------------------------------*/
 .c-homeabout {
   margin-top: 20rem;
+  margin-bottom: 10rem;
 }
 .c-homeabout h1, .c-homeabout .h1 {
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+.c-homeabout h1::before, .c-homeabout .h1::before {
+  top: 1.5rem;
+  left: -1rem;
+  width: 50%;
 }
 .c-homeabout span {
   margin-left: 6rem;
+}
+.c-homeabout__imgcontainer {
+  position: relative;
+}
+.c-homeabout__imgcontainer::before {
+  content: "";
+  width: 55%;
+  height: 80%;
+  background-color: #33BDDB;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.c-homeabout__img--1 {
+  width: 80%;
+  float: right;
+  margin-bottom: 5rem;
+}
+.c-homeabout__img--2 {
+  width: 60%;
+}
+
+.c-homeservices {
+  height: 40rem;
+  background-color: #EBEBEB;
 }
 
 /*---------------------------------------/*
