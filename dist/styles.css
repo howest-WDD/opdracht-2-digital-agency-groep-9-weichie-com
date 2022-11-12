@@ -18376,6 +18376,23 @@ header::after {
 .c-btnblack:hover::before {
   background-color: #33BDDB;
   border-color: #33BDDB;
-} /*---------------------------------------/*
+}
+
+.c-team__imgtop {
+  position: relative;
+}
+.c-team__imgtop::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -25%;
+  top: 25%;
+  background-color: rgba(51, 189, 219, 0.4);
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+/*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
