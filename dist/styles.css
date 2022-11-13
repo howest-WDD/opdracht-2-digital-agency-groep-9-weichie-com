@@ -18396,7 +18396,7 @@ header::after {
 }
 
 .c-jobs {
-  margin: 30rem 0;
+  margin: 30rem 0 10rem 0;
 }
 .c-jobs__card {
   width: 100%;
@@ -18436,7 +18436,7 @@ header::after {
   justify-content: space-around;
   border-bottom: 1px solid #ffffff;
   margin: 0 4rem;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 0.5rem 1rem;
 }
 .c-footer__navitem {
   margin-left: 2.5rem;
@@ -18446,6 +18446,20 @@ header::after {
 }
 .c-footer__navlink {
   color: #ffffff;
+}
+.c-footer__navlink--active {
+  z-index: 2;
+  position: relative;
+}
+.c-footer__navlink--active::after {
+  content: "";
+  width: 1.6rem;
+  height: 0.5rem;
+  position: absolute;
+  bottom: -0.1rem;
+  right: -0.5rem;
+  background-color: #33bddb;
+  z-index: -166;
 }
 .c-footer__newsletter {
   margin: 3rem 4rem;
@@ -18460,7 +18474,7 @@ header::after {
 }
 .c-footer__formbtn {
   width: 3.5rem !important;
-  height: 3rem !important;
+  height: 2.5rem !important;
   background-color: #2D3239 !important;
   border: 2px solid #ffffff;
 }
@@ -18470,24 +18484,19 @@ header::after {
   color: #ffffff;
 }
 .c-footer__formfield {
-  height: 3rem;
+  height: 2.5rem;
+}
+.c-footer__contact {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 .c-footer__bottom {
   border-top: 1px solid #ffffff;
   padding-top: 1.5rem;
   margin-bottom: 1.5rem;
   margin-top: 2rem;
-}
-.c-footer ::before {
-  content: "";
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  top: -2rem;
-  right: 5%;
-  transform: rotate(-8deg);
-  z-index: -1;
-  background-color: rgba(51, 189, 219, 0.4);
 }
 
 /*---------------------------------------/*

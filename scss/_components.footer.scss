@@ -13,7 +13,7 @@
     justify-content: space-around;
     border-bottom: 1px solid $color-white;
     margin: 0 4rem;
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1rem 0.5rem 1rem;
   }
   &__navitem {
     margin-left: 2.5rem;
@@ -24,6 +24,20 @@
   }
   &__navlink {
     color: $color-white;
+    &--active {
+      z-index: 2;
+      position: relative;
+      &::after {
+        content: "";
+        width: 1.6rem;
+        height: 0.5rem;
+        position: absolute;
+        bottom: -0.1rem;
+        right: -0.5rem;
+        background-color: $color-blue;
+        z-index: -166;
+      }
+    }
   }
   &__newsletter {
     margin: 3rem 4rem;
@@ -39,7 +53,7 @@
   }
   &__formbtn {
     width: 3.5rem !important;
-    height: 3rem !important;
+    height: 2.5rem !important;
     background-color: $color-text-black !important;
     border: 2px solid $color-white;
     i {
@@ -49,7 +63,13 @@
     }
   }
   &__formfield {
-    height: 3rem;
+    height: 2.5rem;
+  }
+  &__contact {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
   }
   &__bottom {
     border-top: 1px solid $color-white;
@@ -57,15 +77,15 @@
     margin-bottom: 1.5rem;
     margin-top: 2rem;
   }
-  ::before {
-    content: "";
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    top: -2rem;
-    right: 5%;
-    transform: rotate(-8deg);
-    z-index: -1;
-    background-color: rgba($color-blue, 0.4);
-  }
+  // ::before {
+  //   content: "";
+  //   width: 50%;
+  //   height: 50%;
+  //   position: absolute;
+  //   top: -2rem;
+  //   right: 5%;
+  //   transform: rotate(-8deg);
+  //   z-index: -1;
+  //   background-color: rgba($color-blue, 0.4);
+  // }
 }
