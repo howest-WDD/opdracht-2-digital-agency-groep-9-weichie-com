@@ -18394,7 +18394,29 @@ header::after {
   transform: rotate(-45deg);
   z-index: -1;
 }
+.c-team__arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+.c-team__arrowshape {
+  margin-top: 1rem;
+  animation: MoveDown 2s linear infinite;
+}
 
+@keyframes MoveDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .c-jobs {
   margin-top: 30rem;
   padding-bottom: 10rem;
@@ -18431,7 +18453,7 @@ header::after {
 }
 .c-jobs__bg {
   position: absolute;
-  z-index: -2;
+  z-index: -10;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -18571,6 +18593,10 @@ header::after {
   font-size: 1.3rem;
   margin-left: 0.8rem;
 }
+.c-footer__socials i:hover {
+  background-color: #151618;
+  color: #ffffff;
+}
 .c-footer__socials::before {
   content: "";
   position: absolute;
@@ -18580,6 +18606,16 @@ header::after {
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+.c-footer__bgshape {
+  position: absolute;
+  top: -3rem;
+  right: 10%;
+  width: 30%;
+  height: 10rem;
+  background-color: rgba(51, 189, 219, 0.4);
+  transform: rotate(-10deg);
   z-index: -1;
 }
 

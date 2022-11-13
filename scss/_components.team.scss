@@ -13,4 +13,28 @@
       z-index: -1;
     }
   }
+  &__arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  }
+
+  &__arrowshape {
+    margin-top: 1rem;
+    animation: MoveDown 2s linear infinite;
+  }
+}
+
+@keyframes MoveDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
