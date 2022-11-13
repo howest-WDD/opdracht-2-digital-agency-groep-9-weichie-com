@@ -1,0 +1,58 @@
+.c-nav{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: $color-darkgrey;
+    position: relative;
+
+    &--home{
+        background-color: $color-black;
+    }
+
+    &__logocontainer{
+
+    }
+    &__logo{
+
+    }
+    &__listcontainer{
+        margin-top: 2rem;
+    }
+    &__list{
+        list-style-type: none;
+        overflow: auto;
+        justify-content: right;
+    }
+    &__listitem{
+        align-items: center;
+        padding-right: 3rem;
+    }
+    &__link{
+        z-index: 200;
+        font-size: 1.375rem;
+        color: $color-lightgrey;
+        
+        
+        &:hover{
+            color: $color-white;
+        }
+        &--active{
+            color: $color-white;
+            position:relative;
+            z-index: 2;   
+            display: block;
+            &::before{
+                z-index: -1;
+                position: absolute;
+                content: "";
+                bottom: 0rem;
+                left: 1rem;
+                width: 3.125rem;
+                height: 1rem;
+                background-color: $color-blue;
+            }
+
+        }
+        
+    }
+
+}

@@ -1,0 +1,184 @@
+.container{
+    position: relative;
+}
+.parent {
+	display: grid;
+    position: relative;
+    
+    &:hover{
+        
+        position: relative;
+        text-align: center;
+    
+    }
+    
+}
+.c-backgroundimage{
+    background-image: url("../img/Path_58.png");
+    background-repeat: no-repeat;
+    background-position: cover;
+    bottom: 0px;
+    background-position-y: bottom;
+
+}
+.c-cards__backtotop{
+
+    
+    position: fixed; /* Fixed/sticky position */
+    right: 20px;
+    bottom: 20px;
+
+    z-index: 99; /* Make sure it does not overlap */
+    width: 3rem;
+    height: 3rem;
+    background-color: $color-blue; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    justify-content: center;
+    border-radius: 50px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    &:hover{
+        color: white;
+    }
+}
+.c-cards__arrow{
+        
+}
+
+.div1 {
+	grid-area: 1 / 1 / 4 / 2;
+    width: 398px;
+    height: 483px;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 32px;
+
+    
+
+}
+.div2 {
+	grid-area: 1 / 2 / 3 / 3;
+	margin-bottom: 2.5rem;
+    width:398px;
+    height:360px;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 32px;
+}
+.div3 {
+	grid-area: 1 / 3 / 4 / 4;
+    width:398px;
+    height:483px;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 32px;
+
+}
+.div4 {
+	grid-area: 4 / 1 / 6 / 1;
+    width:398px;
+    height:410px;
+    margin-top: -4rem;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 32px;
+}
+.div5 {
+	grid-area: 3 / 2 / 5 / 3;
+	margin-bottom: 2rem;
+    width:398px;
+    height:360px;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 32px;
+}
+.div6 {
+	grid-area: 4 / 3 / 6 / 4;
+    margin-bottom: 1.5rem;
+    width:398px;
+    height:360px;
+    margin-top: -4rem;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 32px;
+}
+.div7 {
+	grid-area: 6 / 1 / 8 / 2;
+    width:398px;
+    height:388px;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 32px;
+}
+.div8 {
+	grid-area: 5 / 2 / 7 / 3;
+	margin-bottom: 2rem;
+    width:398px;
+    height:390px;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 32px;
+}
+.div9 {
+	grid-area: 6 / 3 / 8 / 4;
+    width:398px;
+    height:531px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-size: 32px;
+}
+.div10 {
+	grid-area: 7 / 2 / 10 / 3;
+    width:398px;
+    height:410px;
+    margin-top: -2rem;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 32px;
+}
+image { 
+    position: relative;
+    &--vlinvesta{
+        position: absolute;
+        content: "hello";
+        width: 65px;
+        height: 100px;
+    
+    }
+}
+.centered {
+    
+    color: transparent;
+    transition: ease-in-out;
+    &:hover{
+        transition: ease-in-out 0.3s;
+        background-color: white;
+        color: black;
+        width: 400px;
+        height: 48px;
+    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+  }
+.image--resize1{
+    width:398px;
+    height:360x;
+
+}
+
+

@@ -1,0 +1,21 @@
+.c-text{
+    padding-top: 2rem;
+    &__title{
+        position: relative;
+        z-index: 2;
+
+        &::before{
+            position: absolute;
+            z-index: -1;
+            background-color: $color-blue;
+            content: "";
+            top: 1.2rem;
+            right: 8.5rem;
+            width: 11rem;
+            height: 1.7rem;
+
+        }
+    
+
+    }
+}
