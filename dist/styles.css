@@ -18589,7 +18589,7 @@ header::after {
   color: #151618;
   background-color: #ffffff;
   padding: 0.3rem;
-  border-radius: 50%;
+  border-radius: 100%;
   font-size: 1.3rem;
   margin-left: 0.8rem;
 }
