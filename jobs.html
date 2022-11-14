@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weichie - Jobs</title>
     <link rel="stylesheet" href="dist/styles.css" />
+    <script src="scripts/newsletter.js"></script>
   </head>
   <body>
     <section class="c-team">
@@ -49,15 +50,15 @@
     <section class="c-jobs">
       <div class="container">
         <div class="row c-jobs__row c-jobs__row--1">
-          <div class="col-7">
+          <div class="col-12 col-lg-7">
             <h4>Manager positions</h4>
             <div class="c-jobs__card">
-              <h4>Name Position</h4>
-              <p>arrow</p>
+              <h4>Digital Project Manager</h4>
+              <i class="bi bi-arrow-right"></i>
             </div>
             <div class="c-jobs__card">
-              <h4>Name Position</h4>
-              <p>arrow</p>
+              <h4>SEO expert</h4>
+              <i class="bi bi-arrow-right"></i>
             </div>
           </div>
           <div class="offset-1 col-4 c-jobs__imgcont">
@@ -69,25 +70,25 @@
             <img class="img-fluid" src="img/jobs-positions2.png" alt />
           </div>
           <div class="offset-1 col-7">
-            <h4>Manager positions</h4>
+            <h4>Developer positions</h4>
             <div class="c-jobs__card">
-              <h4>Name Position</h4>
-              <p>arrow</p>
+              <h4>Frontend developer</h4>
+              <i class="bi bi-arrow-right"></i>
             </div>
             <div class="c-jobs__card">
-              <h4>Name Position</h4>
-              <p>arrow</p>
+              <h4>Senior backend developer</h4>
+              <i class="bi bi-arrow-right"></i>
             </div>
             <div class="c-jobs__card">
-              <h4>Name Position</h4>
-              <p>arrow</p>
+              <h4>Magento developer</h4>
+              <i class="bi bi-arrow-right"></i>
             </div>
           </div>
           <div class="col-7">
-            <h4>Manager positions</h4>
+            <h4>Designer positions</h4>
             <div class="c-jobs__card">
-              <h4>Name Position</h4>
-              <p>arrow</p>
+              <h4>UX/UI wizard</h4>
+              <i class="bi bi-arrow-right"></i>
             </div>
           </div>
         </div>
@@ -146,5 +147,21 @@
       </div>
       <div class="c-footer__bgshape"></div>
     </footer>
+    <div class="c-newsletter js-newsletter">
+      <div class="c-newsletter__content">
+        <i class="bi bi-arrow-right-short js-newsletter-arrow c-newsletter__arrow"></i>
+        <div class="c-newsletter__input text-center">
+          <div class="c-newsletter__text">
+            <p>keep up to date</p>
+            <h4>subscribe to our newsletter!</h4>
+          </div>
+          <form class="c-newsletter__form form mb-3">
+            <input type="email" class="form-control c-newsletter__formfield" id="emailInput" required placeholder="Email adress" />
+            <button type="submit" class="c-newsletter__formbtn"><i class="bi bi-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      <i class="bi bi-x js-newsletter-close c-newsletter__close"></i>
+    </div>
   </body>
 </html>

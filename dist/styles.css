@@ -18246,6 +18246,21 @@ h4,
   font-family: "Anton", sans-serif;
 }
 
+h1, .h1 {
+  position: relative;
+  z-index: 2;
+}
+h1::before, .h1::before {
+  content: "";
+  width: 12rem;
+  height: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 10rem;
+  background-color: #33bddb;
+  z-index: -1;
+}
+
 header {
   height: 85vh;
   background-color: #151618;
@@ -18418,22 +18433,23 @@ header::after {
   }
 }
 .c-jobs {
-  margin-top: 30rem;
+  margin-top: 10rem;
   padding-bottom: 10rem;
   position: relative;
 }
 .c-jobs__card {
   width: 100%;
-  height: 7.6875rem;
+  height: 6rem;
   background-color: white;
   display: flex;
   align-items: center;
   position: relative;
   justify-content: space-between;
   padding: 0 1.5rem 0 6rem;
-  margin: 3rem 0;
+  margin-bottom: 3rem;
+  box-shadow: 0px 3px 9px rgba(21, 22, 24, 0.2);
 }
-.c-jobs__card ::before {
+.c-jobs__card ::after {
   content: "";
   width: 90%;
   height: 100%;
@@ -18442,10 +18458,17 @@ header::after {
   z-index: -1;
   top: 50%;
   left: 50%;
-  transform: rotate(-5deg) translateX(-50%) translateY(-50%);
+  transform: rotate(-3deg) translateX(-50%) translateY(-60%);
+}
+.c-jobs__card i {
+  font-size: 2rem;
+  color: #151618;
+}
+.c-jobs__card h4, .c-jobs__card .h4 {
+  margin: 0;
 }
 .c-jobs__row--1 {
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 .c-jobs__imgcont {
   display: flex;
@@ -18460,7 +18483,7 @@ header::after {
 }
 .c-jobs__black {
   width: 100%;
-  height: 55rem;
+  height: 45rem;
   background-color: #151618;
   position: relative;
 }
@@ -18468,7 +18491,7 @@ header::after {
   content: "";
   position: absolute;
   top: 0;
-  width: 0.5rem;
+  width: 0.4rem;
   height: 25rem;
   left: 40%;
   background-color: white;
@@ -18484,7 +18507,7 @@ header::after {
 }
 .c-jobs__grey {
   width: 100%;
-  height: 16rem;
+  height: 14rem;
   background-color: #ebebeb;
   position: relative;
 }
@@ -18492,8 +18515,8 @@ header::after {
   content: "";
   position: absolute;
   bottom: 0;
-  width: 0.5rem;
-  height: 40rem;
+  width: 0.4rem;
+  height: 32rem;
   left: 40%;
   background-color: black;
 }
@@ -18617,6 +18640,90 @@ header::after {
   background-color: rgba(51, 189, 219, 0.4);
   transform: rotate(-10deg);
   z-index: -1;
+}
+
+.c-newsletter {
+  width: 40rem;
+  height: 10rem;
+  padding: 1rem;
+  position: fixed;
+  top: 15rem;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 10;
+  box-shadow: 0px 3px 9px rgba(21, 22, 24, 0.2);
+  display: flex;
+  align-items: center;
+}
+.c-newsletter::after {
+  content: "";
+  width: 100%;
+  height: 0.5rem;
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  background-color: #33bddb;
+  z-index: 20;
+}
+.c-newsletter__content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.c-newsletter__input {
+  width: 25rem;
+  margin-left: 3rem;
+}
+.c-newsletter__form {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 9px rgba(21, 22, 24, 0.2);
+}
+.c-newsletter__formbtn {
+  width: 3rem !important;
+  height: 2.5rem !important;
+  background-color: #2D3239 !important;
+  border: 2px solid #ffffff;
+}
+.c-newsletter__formbtn i {
+  width: 100% !important;
+  height: 3rem;
+  color: #ffffff;
+}
+.c-newsletter__formfield {
+  height: 2.5rem;
+}
+.c-newsletter__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+.c-newsletter h4, .c-newsletter .h4 {
+  font-size: 1rem;
+  margin: 0;
+}
+.c-newsletter p {
+  margin: 0;
+}
+.c-newsletter__close {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  font-size: 2rem;
+}
+.c-newsletter__close:hover {
+  color: #33bddb;
+}
+.c-newsletter__arrow {
+  font-size: 2rem;
+}
+.c-newsletter__arrow:hover {
+  color: #33bddb;
+}
+
+.c-newsletterhidden {
+  display: none;
 }
 
 /*---------------------------------------/*
