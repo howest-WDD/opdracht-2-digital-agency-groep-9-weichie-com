@@ -20,6 +20,17 @@
         z-index: 1;
     }
 
+    &::after{
+        content: "";
+        position: absolute;
+        width: 12.5rem;
+        height: 3.125rem;
+        background-color: $color-blue;
+        bottom: -1.5625rem;
+        left: 0;
+        z-index: 1;
+    }
+
     &__img {
         margin-top: 2rem;
     }

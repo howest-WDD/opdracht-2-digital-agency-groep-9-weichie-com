@@ -18474,6 +18474,16 @@ header::after {
   right: 0;
   z-index: 1;
 }
+.c-aboutweichie::after {
+  content: "";
+  position: absolute;
+  width: 12.5rem;
+  height: 3.125rem;
+  background-color: #33BDDB;
+  bottom: -1.5625rem;
+  left: 0;
+  z-index: 1;
+}
 .c-aboutweichie__img {
   margin-top: 2rem;
 }
