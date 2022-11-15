@@ -18399,6 +18399,48 @@ header::after {
   }
 }
 
+.c-teamcards {
+  margin-top: 15rem;
+}
+.c-teamcards h1, .c-teamcards .h1 {
+  position: relative;
+  font-size: 3.125rem;
+  margin-bottom: 2rem;
+}
+.c-teamcards h1::before, .c-teamcards .h1::before {
+  content: "";
+  position: absolute;
+  width: 15rem;
+  height: 1.5625rem;
+  background-color: #33BDDB;
+  bottom: 0;
+  left: 45%;
+  z-index: -1;
+}
+.c-teamcards p {
+  color: #2E2E2E;
+}
+.c-teamcards__card--img {
+  margin: 1rem;
+}
+.c-teamcards__card--content {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  position: relative;
+}
+.c-teamcards__card--content h3, .c-teamcards__card--content .h3, .c-teamcards__card--content p {
+  position: absolute;
+  left: 2.5rem;
+}
+.c-teamcards__card--content h3, .c-teamcards__card--content .h3 {
+  font-size: 1.25rem;
+  top: 25%;
+}
+.c-teamcards__card--content p {
+  font-size: 1rem;
+  top: 45%;
+}
+
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
