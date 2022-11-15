@@ -18440,6 +18440,48 @@ header::after {
   top: 45%;
 }
 
+.c-btnblue {
+  padding: 0.6rem 1rem;
+  width: auto;
+  height: 1rem;
+  background-color: #33BDDB;
+  color: #FFFFFF;
+  font-family: "Anton", sans-serif;
+  font-size: 1.125rem;
+}
+.c-btnblue:hover {
+  background-color: #FFFFFF;
+  color: #33BDDB;
+  transition: all 0.2s ease-in;
+}
+
+.c-aboutweichie {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  width: 100%;
+  height: auto;
+  padding: 5rem 0 5rem;
+  background-color: #151618;
+}
+.c-aboutweichie__img {
+  margin-top: 2rem;
+}
+.c-aboutweichie__content {
+  margin: 2rem 1rem 2rem 0;
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+.c-aboutweichie__content--subtitle, .c-aboutweichie__content--paraph {
+  font-family: "Anton", sans-serif;
+  font-size: 1.25rem;
+}
+.c-aboutweichie__content--subtitle {
+  text-transform: uppercase;
+}
+.c-aboutweichie__content--title {
+  font-size: 3.125rem;
+}
+
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
