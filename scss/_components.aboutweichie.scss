@@ -7,6 +7,19 @@
     padding: 5rem 0 5rem;
     background-color: $color-black;
 
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 12.5rem;
+        height: 3.125rem;
+        background-color: $color-blue;
+        top: -1.5625rem;
+        right: 0;
+        z-index: 1;
+    }
+
     &__img {
         margin-top: 2rem;
     }

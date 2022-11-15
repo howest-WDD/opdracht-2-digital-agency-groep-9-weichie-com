@@ -18462,6 +18462,17 @@ header::after {
   height: auto;
   padding: 5rem 0 5rem;
   background-color: #151618;
+  position: relative;
+}
+.c-aboutweichie::before {
+  content: "";
+  position: absolute;
+  width: 12.5rem;
+  height: 3.125rem;
+  background-color: #33BDDB;
+  top: -1.5625rem;
+  right: 0;
+  z-index: 1;
 }
 .c-aboutweichie__img {
   margin-top: 2rem;
