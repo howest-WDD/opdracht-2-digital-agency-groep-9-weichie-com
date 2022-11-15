@@ -18425,7 +18425,6 @@ header::after {
 }
 .c-teamcards__card--content {
   margin-top: 1rem;
-  margin-left: 1rem;
   position: relative;
 }
 .c-teamcards__card--content h3, .c-teamcards__card--content .h3, .c-teamcards__card--content p {
