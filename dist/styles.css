@@ -18412,6 +18412,23 @@ header::after {
   transform: rotate(-45deg);
   z-index: -1;
 }
+.c-jobsteam__imgtop::after {
+  content: "";
+  width: 100%;
+  height: 0.5rem;
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  background-color: #33bddb;
+  z-index: 20;
+}
+.c-jobsteam__text {
+  margin-bottom: 3rem;
+}
+.c-jobsteam__textmarkup {
+  color: #33bddb;
+  font-weight: bolder;
+}
 .c-jobsteam__arrow {
   display: flex;
   flex-direction: column;
