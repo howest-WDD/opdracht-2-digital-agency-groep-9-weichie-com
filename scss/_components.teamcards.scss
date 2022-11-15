@@ -25,6 +25,12 @@
         
         &--img {
             margin: 1rem;
+
+            &:hover {
+                transform: scale(1.02);
+                border-bottom: 5px solid $color-blue;
+                transition: 200ms ease-in-out;
+            }
         }
 
         &--content {

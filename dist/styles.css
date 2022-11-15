@@ -18423,6 +18423,11 @@ header::after {
 .c-teamcards__card--img {
   margin: 1rem;
 }
+.c-teamcards__card--img:hover {
+  transform: scale(1.02);
+  border-bottom: 5px solid #33BDDB;
+  transition: 200ms ease-in-out;
+}
 .c-teamcards__card--content {
   margin-top: 1rem;
   position: relative;
