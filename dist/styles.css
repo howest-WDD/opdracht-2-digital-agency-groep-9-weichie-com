@@ -18351,6 +18351,9 @@ header::after {
   background-color: #EBEBEB;
 }
 
+.c-about {
+  margin-top: 5rem;
+}
 .c-about__text h1, .c-about__text .h1 {
   position: relative;
   font-size: 3.125rem;
@@ -18367,25 +18370,33 @@ header::after {
   left: 43%;
   z-index: -1;
 }
+.c-about__text p {
+  margin-right: 2rem;
+}
 .c-about__text strong {
   color: #33BDDB;
 }
 .c-about__text strong:hover {
   text-decoration: underline;
 }
-.c-about__img {
-  position: relative;
+.c-about__img img {
+  border-bottom: 10px solid #33BDDB;
 }
-.c-about__img::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  right: -25%;
-  top: 25%;
-  background-color: rgba(51, 189, 219, 0.4);
-  transform: rotate(-45deg);
-  z-index: -1;
+@media (min-width: 1200px) {
+  .c-about__img {
+    position: relative;
+  }
+  .c-about__img::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(51, 189, 219, 0.4);
+    width: 80%;
+    height: 80%;
+    left: -24%;
+    top: 30%;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
 }
 
 /*---------------------------------------/*
