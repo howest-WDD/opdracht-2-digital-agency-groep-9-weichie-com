@@ -1,12 +1,13 @@
 .c-hometestimonials {
 
     &__img {
-        height: 476px;
-        width: 35%;
+        height: 500px;
+        width: 33%;
         background-position: center center;
         background-size: cover;
         background-image: url("../img/hometestimonialsimg.png");
-        margin-right: 2rem;
+        // margin-right: 2rem;
+        margin-left: 0;
 
         @include media-breakpoint-down(lg) {
             display: none;
@@ -41,7 +42,7 @@
         margin: 3rem 4rem;
         color: $color-darkgrey;
         padding: 1rem;
-        max-width: 40rem;
+        max-width: 44rem;
         height: 8rem;
         background-color: $color-white;
         text-align: center;
