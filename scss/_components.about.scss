@@ -1,0 +1,54 @@
+.c-about {
+    margin-top: 5rem;
+
+    &__text {
+        h1 {
+            position: relative;
+            font-size: 3.125rem;
+            text-transform: capitalize;
+            margin-bottom: 2rem;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 10rem;
+                height: 1.5625rem;
+                background-color: $color-blue;
+                bottom: 0;
+                left: 43%;
+                z-index: -1;
+            }
+        }
+
+        p {
+            margin-right: 2rem;
+        }
+
+        strong {
+            color: $color-blue;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__img {
+        img {
+            border-bottom: 10px solid $color-blue;
+        }
+
+        @include media-breakpoint-up(xl) {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                background-color: rgba($color-blue, 0.4);
+                width: 80%;
+                height: 80%;
+                left: -24%;
+                top: 30%;
+                transform: rotate(45deg);
+                z-index: -1;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.c-teamcards {
+    margin-top: 15rem;
+
+    h1 {
+        position: relative;
+        font-size: 3.125rem;
+        margin-bottom: 2rem;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 15rem;
+            height: 1.5625rem;
+            background-color: $color-blue;
+            bottom: 0;
+            left: 45%;
+            z-index: -1;
+        }
+    }
+
+    p {
+        color: $color-darkgrey;
+    }
+
+    &__card {
+        
+        &--img {
+            margin: 1rem;
+
+            &::after{
+                content: "";
+                background-color: $color-blue;
+                width: 0%;
+                height: .5rem;
+                position: absolute;
+                bottom: -8px;
+                left: 0;
+                display: flex;
+                transition: width 0.3s ease;
+            }
+            &:hover{
+                &::after{
+                    width: 100%;
+                }
+            }
+        }
+
+        &--content {
+            margin-top: 1rem;
+            position: relative;
+
+            h3, p {
+                position: absolute;
+                left: 2.5rem;
+            }
+
+            h3 {
+                font-size: 1.25rem;
+                top: 25%;
+            }
+
+            p {
+                font-size: 1rem;
+                top: 45%;
+            }
+        }
+    }
+}
