@@ -2,6 +2,7 @@
   border: 1px solid black;
   padding: 0.8rem 3rem;
   position: relative;
+  font-family: neuzeit-grotesk, sans-serif;
   background-color: $color-light;
   color: $color-black;
   &::before {
@@ -30,7 +31,7 @@
   height: 1rem;
   background-color: $color-blue;
   color: $color-white;
-  font-family: "Anton", sans-serif;
+  font-family: neuzeit-grotesk, sans-serif;
   font-size: 1.125rem;
   position: relative;
   z-index: 1;
