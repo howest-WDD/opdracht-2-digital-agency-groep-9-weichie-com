@@ -18561,23 +18561,62 @@ h1, .h1, h2, .h2, h3, .h3 {
   background-color: #2E2E2E;
   position: relative;
 }
+.c-nav__container {
+  margin-top: 0rem;
+}
 .c-nav--home {
   background-color: #151618;
 }
+.c-nav__logocontainer {
+  align-items: center;
+}
+.c-nav__logo {
+  width: 50%;
+  height: auto;
+}
 .c-nav__listcontainer {
-  margin-top: 2rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 .c-nav__list {
   list-style-type: none;
-  overflow: auto;
-  justify-content: right;
+  justify-content: flex-end;
+}
+@media (max-width: 991.98px) {
+  .c-nav__list {
+    width: 18rem;
+    height: 100vh;
+    transition: ease-in-out;
+    background-color: rgba(46, 46, 46, 0.75);
+    flex-direction: column;
+    text-align: center;
+    justify-content: start;
+    padding-left: 0;
+    z-index: 200;
+    padding-top: 6rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(300px);
+  }
+  .c-nav__list > .c-nav__item {
+    margin: 1rem 0;
+  }
+  .c-nav__list > .c-nav__item .c-nav__link {
+    color: #FFFFFF;
+  }
+  .c-nav__list > .c-nav__item .c-nav__link--active, .c-nav__list > .c-nav__item .c-nav__link:hover {
+    color: #33BDDB;
+  }
 }
 .c-nav__listitem {
   align-items: center;
-  padding-right: 3rem;
+  padding-right: 2rem;
 }
 .c-nav__link {
-  z-index: 200;
+  z-index: 100;
   font-size: 1.375rem;
   color: #EBEBEB;
 }
@@ -18600,6 +18639,63 @@ h1, .h1, h2, .h2, h3, .h3 {
   height: 1rem;
   background-color: #33BDDB;
 }
+@media (max-width: 991.98px) {
+  .c-nav__link--active::before {
+    left: 7rem;
+  }
+}
+.c-nav__bar {
+  z-index: 600;
+  display: block;
+  width: 2rem;
+  height: 0.2rem;
+  top: 0px;
+  margin-bottom: 0.3rem;
+  background-color: #33BDDB;
+  border-radius: 0.2rem;
+  position: relative;
+  transition: transform 0.5s, opacity 0.2s;
+}
+@media (min-width: 992px) {
+  .c-nav__bar {
+    display: none;
+  }
+}
+.c-nav__bar--top {
+  transform-origin: 0;
+}
+.c-nav__bar--mid {
+  opacity: 100;
+}
+.c-nav__bar--bottom {
+  transform-origin: 0 100%;
+}
+.c-nav__toggle {
+  width: 2rem;
+  height: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  z-index: 399;
+  display: block;
+}
+@media (min-width: 992px) {
+  .c-nav__toggle {
+    display: none;
+  }
+}
+.c-nav__toggle:checked ~ .c-nav__bar--top {
+  transform: rotate(45deg);
+}
+.c-nav__toggle:checked ~ .c-nav__bar--mid {
+  opacity: 0;
+}
+.c-nav__toggle:checked ~ .c-nav__bar--bottom {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.c-nav__toggle:checked ~ .c-nav__list {
+  transform: none;
+}
 
 .c-text {
   padding-top: 2rem;
@@ -18610,7 +18706,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 .c-text__title::before {
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   background-color: #33BDDB;
   content: "";
   top: 1.2rem;
@@ -18693,6 +18789,8 @@ h1, .h1, h2, .h2, h3, .h3 {
   grid-area: 1/1/4/2;
   width: 398px;
   height: 483px;
+  max-width: 100%;
+  max-height: 100%;
   position: relative;
   text-align: center;
   color: black;
@@ -18711,6 +18809,8 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 .div--2 {
   grid-area: 1/2/3/3;
+  max-width: 100%;
+  max-height: 100%;
   margin-bottom: 2.5rem;
   width: 24.875rem;
   height: 22.5625rem;
@@ -18732,6 +18832,8 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 .div--3 {
   grid-area: 1/3/4/4;
+  max-width: 100%;
+  max-height: 100%;
   width: 398px;
   height: 483px;
   position: relative;
@@ -18752,6 +18854,8 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 .div--4 {
   grid-area: 4/1/6/1;
+  max-width: 100%;
+  max-height: 100%;
   width: 398px;
   height: 410px;
   margin-top: -4rem;
@@ -18774,6 +18878,8 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 .div--5 {
   grid-area: 3/2/5/3;
+  max-width: 100%;
+  max-height: 100%;
   margin-bottom: 2rem;
   width: 398px;
   height: 360px;
@@ -18795,6 +18901,8 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 .div--6 {
   grid-area: 4/3/6/4;
+  max-width: 100%;
+  max-height: 100%;
   margin-bottom: 1.5rem;
   width: 398px;
   height: 360px;
@@ -18818,6 +18926,8 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 .div--7 {
   grid-area: 6/1/8/2;
+  max-width: 100%;
+  max-height: 100%;
   width: 398px;
   height: 388px;
   position: relative;
@@ -18838,6 +18948,8 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 .div--8 {
   grid-area: 5/2/7/3;
+  max-width: 100%;
+  max-height: 100%;
   margin-bottom: 2rem;
   width: 24.875rem;
   height: 24.375rem;
@@ -18859,6 +18971,8 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 .div--9 {
   grid-area: 6/3/8/4;
+  max-width: 100%;
+  max-height: 100%;
   position: relative;
   align-items: center;
   text-align: center;
@@ -18878,6 +18992,8 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 .div--10 {
   grid-area: 7/2/10/3;
+  max-width: 100%;
+  max-height: 100%;
   width: 398px;
   height: 300px;
   margin-top: -2rem;
