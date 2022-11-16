@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weichie - Home</title>
     <link rel="stylesheet" href="dist/styles.css" />
+    <script src="dist/main.js"></script>
   </head>
   <body>
     <!-- <nav class="c-nav js-nav">
@@ -50,7 +51,7 @@
         </div>
       </div>
     </header>
-    <section class="c-homeabout">
+    <section class="c-homeabout js-homeabout">
       <div class="container">
         <div class="row">
           <div class="col-lg-5 offset-lg-1">
@@ -86,5 +87,21 @@
         </div>
       </div>
     </section>
+    <div class="c-newsletter js-newsletter">
+      <div class="c-newsletter__content">
+        <i class="bi bi-arrow-right-short js-newsletter-arrow c-newsletter__arrow"></i>
+        <div class="c-newsletter__input text-center">
+          <div class="c-newsletter__text">
+            <p>keep up to date</p>
+            <h4>subscribe to our newsletter!</h4>
+          </div>
+          <form class="c-newsletter__form form mb-3">
+            <input type="email" class="form-control c-newsletter__formfield" id="emailInput" required placeholder="Email adress" />
+            <button type="submit" class="c-newsletter__formbtn"><i class="bi bi-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      <i class="bi bi-x js-newsletter-close c-newsletter__close"></i>
+    </div>
   </body>
 </html>
