@@ -2,13 +2,13 @@
 	position: relative;
     margin-top: 2rem;
 }
-.parent {
+.c-parent {
 	display: grid;
 	position: relative;
-
+    grid-row-gap: 16px;
 	&:hover {
 		position: relative;
-		text-align: center;
+		
 	}
     @include media-breakpoint-down(lg){
         display: grid;
@@ -16,17 +16,15 @@
     }
 }
 .c-backgroundimage {
-	background-image: url("../img/Path_58.png");
-	background-repeat: no-repeat;
-	background-position: cover;
-	bottom: 0px;
-	background-position-y: bottom;
-    @include media-breakpoint-down(lg){
-        background-position-y:top ;
-        background-image: none;
-    }
+    background-color: $color-black;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    z-index: -1;
 }
-.c-cards{
+.c-cases{
+    position: relative;
     &__backtotop{
         position: fixed; 
         right: 20px;
@@ -51,21 +49,14 @@
             display: none;
         }
     }
-    &__blackline{
-        position: absolute;
-        left: -75px;
-        top: 0px;
-        @include media-breakpoint-down(lg){
-            display: none;
-        }
-    }
+
 }
 .div{
 
     &--1{
         grid-area: 1 / 1 / 4 / 2;
         width: 398px;
-        height: 483px;
+        
         max-width: 100%;
         max-height: 100%;
         position: relative;
@@ -88,9 +79,10 @@
         grid-area: 1 / 2 / 3 / 3;
         max-width: 100%;
         max-height: 100%;
-        margin-bottom: 2.5rem;
+        height: 361px !important;
+        
         width: 24.875rem;
-        height: 22.5625rem;
+        
         position: relative;
         text-align: center;
         color: black;
@@ -110,7 +102,7 @@
         max-width: 100%;
         max-height: 100%;
         width: 398px;
-        height: 483px;
+     
         position: relative;
         text-align: center;
         color: black;
@@ -130,8 +122,8 @@
         max-width: 100%;
         max-height: 100%;
         width: 398px;
-        height: 410px;
-        margin-top: -4rem;
+  
+        margin: 0 !important;
         position: relative;
         text-align: center;
         color: black;
@@ -151,17 +143,19 @@
         grid-area: 3 / 2 / 5 / 3;
         max-width: 100%;
         max-height: 100%;
-        margin-bottom: 2rem;
+        
         width: 398px;
-        height: 360px;
+        padding-top: 361px;
+        background-color: $color-darkgrey;
         position: relative;
-        text-align: center;
+        
+        
         color: black;
         font-size: 32px;
         @include media-breakpoint-down(lg){
             grid-area: 5 / 1 / 6 / 2;
-            width: 24.875rem;
-            height: 22.5625rem;
+            width: 398px;
+            height: 391px;
             margin-bottom: 2rem;
             text-align: center;
             max-width: 100%;
@@ -172,10 +166,10 @@
         grid-area: 4 / 3 / 6 / 4;
         max-width: 100%;
         max-height: 100%;
-        margin-bottom: 1.5rem;
+        
         width: 398px;
-        height: 360px;
-        margin-top: -4rem;
+
+        
         position: relative;
         text-align: center;
         color: black;
@@ -196,7 +190,7 @@
         max-width: 100%;
         max-height: 100%;
         width: 398px;
-        height: 388px;
+    
         position: relative;
         text-align: center;
         color: black;
@@ -213,11 +207,11 @@
     }
     &--8{
         grid-area: 5 / 2 / 7 / 3;
-        max-width: 100%;
-        max-height: 100%;
-        margin-bottom: 2rem;
-        width: 24.875rem;
-        height: 24.375rem;
+        // max-width: 100%;
+        // max-height: 100%;
+        width: 398px;
+        height: auto;
+        object-fit: cover;
         position: relative;
         text-align: center;
         color: black;
@@ -236,6 +230,8 @@
         grid-area: 6 / 3 / 8 / 4;
         max-width: 100%;
         max-height: 100%;
+        width: 24.875rem;
+        height: auto;
         position: relative;
         align-items: center;
         text-align: center;
@@ -256,8 +252,8 @@
         max-width: 100%;
         max-height: 100%;
         width: 398px;
-        height: 300px;
-        margin-top: -2rem;
+
+        
         position: relative;
         text-align: center;
         color: black;
@@ -298,47 +294,56 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.image--resize1 {
-	width: 398px;
-	height: 360x;
+.c-cta{
+    top: 20%;
+    left: 15%;
+    font-family: neuzeit-grotesk,sans-serif;
+;
+    position: absolute;
+    &:hover{
+        text-align: left !important;
+    }
+
+    &__text{
+        margin: 0;
+        padding: 0;
+        font-weight: 300;
+        color: $color-white;
+        text-align: center;
+        font-size: 30px;
+    }
+    &__title{
+        margin: 0;
+        padding: 0;
+        color: $color-white;
+        text-align: center;
+        font-weight: 900;
+        font-size: 24px;
+    }
+    &__ctaBlue{
+        margin: 0;
+        padding: 0;
+        color: $color-blue;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 24px;
+    }
+    &__btnblue{
+        background-color: $color-blue;
+        border: none;
+        
+    }
+    &__btncontainer{
+        justify-content: center;
+    }
+
 }
-.image{
-    &--vlinvesta{
-        width: 398px;
-        height: 483px;
-       
-    }
-    &--binnekyk{
-        width: 398px;
-        height: 361px;
-    }
-    &--eubac{
-        width: 398px;
-        height: 484px;
-    }
-    &--usepe{
-        width: 398px;
-        height: 410px;
-    }
-    &--science{
-        width: 398px;
-        height: 410px;
-    }
-    &--kroton{
-        width: 398px;
-        height: 411px;
-    }
-    &--smile{
-        width: 398px;
-        height: 388px;
-    }
-    &--mcservice{
-        width: 398px;
-        height: 551px;
-    }
-    &--naomi{
-        width: 398px;
-       height: 300px;
-    }
+
+
+.c-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 
 }
