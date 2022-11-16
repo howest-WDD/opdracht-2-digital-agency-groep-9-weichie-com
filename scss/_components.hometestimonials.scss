@@ -1,0 +1,92 @@
+.c-hometestimonials {
+
+    &__title {
+        margin: 3rem;
+        position: relative;
+        font-size: 3.125rem;
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 10rem;
+            height: 1.5625rem;
+            background-color: $color-blue;
+            bottom: 0;
+            left: 14%;
+            z-index: -1;
+        }
+    }
+
+    h4 {
+        margin: 1rem 3rem;
+    }
+
+
+    &__content {
+        margin: 3rem 4rem;
+        color: $color-darkgrey;
+        padding: 1rem;
+        max-width: 40rem;
+        height: 8rem;
+        background-color: $color-white;
+        text-align: center;
+        padding: 3rem 0;
+        position: relative;
+
+        &--name {
+            position: absolute;
+            right: 2rem;
+            bottom: -.2rem;
+        }
+
+        &--dec1, &--dec2, &--dec3, &--dec4 {
+            position: absolute;
+            background-color: $color-black;
+        }
+
+        &--dec1, &--dec3 {
+            width: .125rem;
+            height: 4rem;
+        }
+
+        &--dec2, &--dec4 {
+            width: 4rem;
+            height: .125rem;
+        }
+
+        &--dec1, &--dec2 {
+            top: -0.625rem;
+            left: -0.625rem;
+        }
+
+        &--dec3, &--dec4 {
+            bottom: -0.625rem;
+            right: -0.625rem;
+        }
+
+        &--imgdet {
+            position: absolute;
+            width: 3.125rem;
+            height: 4rem;
+            background-color: $color-blue;
+            right: -2rem;
+            top: -1rem;
+        }
+
+        img {
+            position: absolute;
+            height: 3.125rem;
+            width: 3.125rem;
+            top: -1rem;
+            right: -1.5rem;
+        }
+
+
+    }
+
+    &__button {
+        margin: 2rem 5rem;
+    }
+}
