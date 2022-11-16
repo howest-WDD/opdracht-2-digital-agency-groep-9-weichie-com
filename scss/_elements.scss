@@ -21,8 +21,24 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Anton", sans-serif;
+}
+
+h1 {
+  position: relative;
+  z-index: 2;
+  &::before {
+    content: "";
+    width: 12rem;
+    height: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 10rem;
+    background-color: $color-blue;
+    z-index: -1;
+  }
 }
 
 header {
@@ -38,6 +54,21 @@ header {
     width: 100%;
     height: 80vh;
     margin-top: 5rem;
+  }
+  h1 {
+    font-size: 4rem;
+    position: relative;
+    z-index: 2;
+    &::before {
+      content: "";
+      width: 12rem;
+      height: 1.8125rem;
+      position: absolute;
+      bottom: 0;
+      right: 10rem;
+      background-color: $color-blue;
+      z-index: -1;
+    }
   }
   h2 {
     font-size: 2rem;
