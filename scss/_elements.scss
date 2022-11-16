@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	font-size: 1rem;
+	font-family: 'Crimson Text', serif;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.3s ease;
+
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+}
+
+h1, h2, h3 {
+    font-family: neuzeit-grotesk, sans-serif;
+	font-family: neuzeit-grotesk-condensed, sans-serif;
+	font-family: neuzeit-grotesk-extra-conden, sans-serif;
+	font-style: normal;
+}

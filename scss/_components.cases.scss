@@ -1,4 +1,4 @@
-.container {
+.c-cases__container {
 	position: relative;
     margin-top: 2rem;
 }
@@ -51,7 +51,7 @@
     }
 
 }
-.div{
+.c-cases__div{
 
     &--1{
         grid-area: 1 / 1 / 4 / 2;
