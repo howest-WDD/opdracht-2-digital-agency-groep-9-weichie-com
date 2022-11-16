@@ -1,6 +1,6 @@
 .c-nav {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	background-color: $color-darkgrey;
 	position: relative;
 	&__container{
@@ -9,25 +9,30 @@
 	&--home {
 		background-color: $color-black;
 	}
-	&__logocontainer{
-		align-items: center;
-	}
+
 	&__logo{
-		width: 50%;
-		height: auto ;
+
+		
+
+		@include media-breakpoint-down(lg){
+			width: 50%;
+			left: 0;
+			justify-content: start;
+			flex-direction: row;
+		}
 		
 		
 	}
-	&__listcontainer {
-		justify-content: center;
+	&__container {
 		display: flex;
 		flex-direction: column;
+		
 		position: relative;
 	}
 	&__list {
 		list-style-type: none;
 		justify-content: flex-end;
-		
+		margin-top: 1rem;
 
 		@include media-breakpoint-down(lg) {
 			width: 18rem;
@@ -62,7 +67,7 @@
 	&__listitem {
 		
 		align-items: center;
-		padding-right: 2rem;
+		padding-right: 4rem;
 	}
 	&__link {
 		z-index: 100;
@@ -93,11 +98,11 @@
 		}
 	}
 	&__bar {
-		z-index: 600;
+		
+		z-index: 8000;
 		display: block;
 		width: 2rem;
 		height: 0.2rem;
-		top: 0px;
 		margin-bottom: 0.3rem;
 		background-color: $color-blue;
 		border-radius: 0.2rem;
@@ -120,6 +125,7 @@
 		}
 	}
 	&__toggle {
+		
 		width: 2rem;
 		height: 1.5rem;
 		cursor: pointer;

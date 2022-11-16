@@ -18551,7 +18551,6 @@ h1, .h1, h2, .h2, h3, .h3 {
   font-family: neuzeit-grotesk, sans-serif;
   font-family: neuzeit-grotesk-condensed, sans-serif;
   font-family: neuzeit-grotesk-extra-conden, sans-serif;
-  font-weight: 400, 700, 900;
   font-style: normal;
 }
 
@@ -18562,8 +18561,8 @@ h1, .h1, h2, .h2, h3, .h3 {
  # COMPONENTS
 /*---------------------------------------*/
 .c-nav {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   background-color: #2E2E2E;
   position: relative;
 }
@@ -18573,15 +18572,15 @@ h1, .h1, h2, .h2, h3, .h3 {
 .c-nav--home {
   background-color: #151618;
 }
-.c-nav__logocontainer {
-  align-items: center;
+@media (max-width: 991.98px) {
+  .c-nav__logo {
+    width: 50%;
+    left: 0;
+    justify-content: start;
+    flex-direction: row;
+  }
 }
-.c-nav__logo {
-  width: 50%;
-  height: auto;
-}
-.c-nav__listcontainer {
-  justify-content: center;
+.c-nav__container {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -18589,6 +18588,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 .c-nav__list {
   list-style-type: none;
   justify-content: flex-end;
+  margin-top: 1rem;
 }
 @media (max-width: 991.98px) {
   .c-nav__list {
@@ -18619,7 +18619,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 .c-nav__listitem {
   align-items: center;
-  padding-right: 2rem;
+  padding-right: 4rem;
 }
 .c-nav__link {
   z-index: 100;
@@ -18651,11 +18651,10 @@ h1, .h1, h2, .h2, h3, .h3 {
   }
 }
 .c-nav__bar {
-  z-index: 600;
+  z-index: 8000;
   display: block;
   width: 2rem;
   height: 0.2rem;
-  top: 0px;
   margin-bottom: 0.3rem;
   background-color: #33BDDB;
   border-radius: 0.2rem;
