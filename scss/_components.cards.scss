@@ -4,7 +4,6 @@
     border: none !important;
     filter: drop-shadow(0rem .1875rem 3px rgba($color-black, 0.5));
     position: relative;
-    // margin-top: 3rem;
     height: 100%;
     &__img{
         width: 18rem;
@@ -21,6 +20,13 @@
     &__text{
         margin-bottom: 3.125rem !important;
         font-family: 'neuzeit-grotesk', sans-serif;
+    }
+
+    &__link{
+        color: $color-black;
+        &:hover{
+            color: $color-black;
+        }
     }
     
     &::before{
@@ -56,5 +62,9 @@
         &::after{
          transform: skew(0, -3deg);
         }
+    }
+    &--home{
+    background-color: $color-lightgrey;
+
     }
 }
