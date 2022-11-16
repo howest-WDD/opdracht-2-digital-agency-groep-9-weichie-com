@@ -1,0 +1,77 @@
+.c-more-info{
+    margin-top: 7.5rem;
+    &__img {
+        height: 550px;
+        background-size: cover;
+        background-position: center center;
+        margin: 1.5625rem 0;
+        &--bg1 {
+          background-image: url("../img/webdesign-service-741x1024.jpg");
+          position: relative;
+        
+        }
+    
+        &--bg2 {
+          background-image: url("../img/ecommerce-service-741x1024.jpg");
+          position: relative;
+
+        }
+
+        &--bg3 {
+            background-image: url("../img/seo-marketing-service-741x1024.jpg");
+            position: relative;
+
+          }
+
+        &::after{
+            content: "";
+            background-color: $color-blue;
+            width: 0%;
+            height: .5rem;
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            display: flex;
+            transition: width 0.3s ease;
+        }
+        &:hover{
+            &::after{
+                width: 100%;
+            }
+        }
+      }
+    
+      &__text {
+        padding: 3rem;
+        margin: auto 0;
+      }
+      &--2{
+        background-color: $color-lightgrey;
+        padding: 0 100%;
+        margin: 0 -100%;
+        
+      }
+      &--3{
+        background-color: $color-black;
+        padding: 0 100%;
+        margin: 0 -100%;
+        color: $color-white;       
+        position: relative; 
+      }
+}
+
+.c-more-blue{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 6rem;
+    width: 17.5rem;
+    top: -3rem;
+    background-color: $color-blue;
+    @media only screen and (max-width: 992px) {
+          display: none;
+      }
+}
+
