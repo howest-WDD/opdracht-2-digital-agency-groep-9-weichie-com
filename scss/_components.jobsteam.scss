@@ -1,0 +1,58 @@
+.c-jobsteam {
+  margin-top: 20rem;
+  &__imgtop {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      right: -25%;
+      top: 25%;
+      background-color: rgba($color-blue, 0.4);
+      transform: rotate(-45deg);
+      z-index: -1;
+    }
+    &::after {
+      content: "";
+      width: 100%;
+      height: 0.5rem;
+      position: absolute;
+      left: 0;
+      bottom: -0.5rem;
+      background-color: $color-blue;
+      z-index: 20;
+    }
+  }
+  &__text {
+    margin-bottom: 3rem;
+  }
+  &__textmarkup {
+    color: $color-blue;
+    font-weight: bolder;
+  }
+  &__arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  }
+
+  &__arrowshape {
+    margin-top: 1rem;
+    animation: MoveDown 2s linear infinite;
+  }
+}
+
+@keyframes MoveDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

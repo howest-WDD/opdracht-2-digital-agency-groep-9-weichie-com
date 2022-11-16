@@ -1,0 +1,43 @@
+.c-homeblogs {
+  margin-top: 5rem;
+  @include media-breakpoint-down(md) {
+    text-align: start;
+  }
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+  &__blog {
+    border-bottom: 2px solid $color-blue;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+    &:last-child {
+      border: none;
+    }
+  }
+  &__img {
+    width: 80%;
+    position: relative;
+    object-fit: cover;
+    @include media-breakpoint-down(md) {
+      width: 90%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      right: 0;
+      width: 5rem;
+      height: 10rem;
+      background-color: $color-blue;
+      z-index: 10;
+    }
+  }
+}
+
+// @include media-breakpoint-only(md) {
+//   // background-color: hotpink;
+//   margin-left: 0;
+//   height: 100%;
+// }

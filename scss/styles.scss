@@ -1,16 +1,17 @@
 /*---------------------------------------/*
  # SETTINGS
 /*---------------------------------------*/
-@import "settings";
+
+@import "settings.scss";
 /*---------------------------------------/*
  # GENERIC
 /*---------------------------------------*/
-@import "generic"; 
-@import "generic.normalize";
+@import "generic.scss";
 /*---------------------------------------/*
  # ELEMENTS
 /*---------------------------------------*/
-@import "elements";
+@import "elements.scss";
+
 /*---------------------------------------/*
  # OBJECTS
 /*---------------------------------------*/
@@ -18,6 +19,23 @@
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
+
+
+@import "components.cards";
+@import "components.diensten.info.scss";
+@import "components.diensten.more.info.scss";
+@import "components.homeabout.scss";
+@import "components.homeservices.scss";
+@import "components.hometestimonials.scss";
+@import "components.homeblogs.scss";
+@import "components.buttons.scss";
+@import "components.jobsteam.scss";
+@import "components.jobs.scss";
+@import "components.footer.scss";
+@import "components.newsletter.scss";
+@import "components.about.scss";
+@import "components.aboutweichie.scss";
+@import "components.teamcards.scss";
 @import "components.nav";
 @import "components.title";
 @import "components.cases";
@@ -25,3 +43,4 @@
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
+
