@@ -39,21 +39,21 @@ header {
     height: 80vh;
     margin-top: 5rem;
   }
-  h1 {
-    font-size: 4rem;
-    position: relative;
-    z-index: 2;
-    &::before {
-      content: "";
-      width: 12rem;
-      height: 1.8125rem;
-      position: absolute;
-      bottom: 0;
-      right: 10rem;
-      background-color: $color-blue;
-      z-index: -1;
-    }
-  }
+  // h1 {
+  //   font-size: 4rem;
+  //   position: relative;
+  //   z-index: 2;
+  //   &::before {
+  //     content: "";
+  //     width: 12rem;
+  //     height: 1.8125rem;
+  //     position: absolute;
+  //     bottom: 0;
+  //     right: 10rem;
+  //     background-color: $color-blue;
+  //     z-index: -1;
+  //   }
+  // }
   h2 {
     font-size: 2rem;
   }
