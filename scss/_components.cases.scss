@@ -1,14 +1,21 @@
-.cases .c-parent {
-  display: grid;
-  position: relative;
-  grid-row-gap: 16px;
-  &:hover {
-    position: relative;
-  }
-  @include media-breakpoint-down(lg) {
-    display: grid;
-    justify-content: center;
-  }
+
+.c-cases__container {
+	position: relative;
+    margin-top: 2rem;
+}
+.c-parent {
+	display: grid;
+	position: relative;
+    grid-row-gap: 16px;
+	&:hover {
+		position: relative;
+		
+	}
+    @include media-breakpoint-down(lg){
+        display: grid;
+        justify-content: center;
+    }
+
 }
 .c-backgroundimage {
   background-color: $color-black;
@@ -48,7 +55,8 @@
     }
   }
 }
-.div {
+
+.c-cases__div{
   &--1 {
     grid-area: 1 / 1 / 4 / 2;
     width: 398px;
@@ -58,6 +66,7 @@
     position: relative;
     text-align: center;
     color: black;
+
 
     font-size: 32px;
     @include media-breakpoint-down(lg) {
