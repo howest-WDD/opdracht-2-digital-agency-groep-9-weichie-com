@@ -26,10 +26,21 @@
         &--img {
             margin: 1rem;
 
-            &:hover {
-                transform: scale(1.02);
-                border-bottom: 5px solid $color-blue;
-                transition: 200ms ease-in-out;
+            &::after{
+                content: "";
+                background-color: $color-blue;
+                width: 0%;
+                height: .5rem;
+                position: absolute;
+                bottom: -8px;
+                left: 0;
+                display: flex;
+                transition: width 0.3s ease;
+            }
+            &:hover{
+                &::after{
+                    width: 100%;
+                }
             }
         }
 
