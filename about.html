@@ -8,7 +8,47 @@
     <link rel="stylesheet" href="dist/styles.css">
 </head>
 <body>
+
+    <nav class="c-nav">
+        <div class="container-md container-sm c-nav__container">
+          <div class="row align-items-center">
+              <div class="col-3 col-lg-1 justify-content-start">
     
+                  <img src="./img/weichie-letter-logo-black.png" class="c-nav__logo" alt="weichie-letter-logo-black">
+  
+                
+              </div>
+              <div class="c-nav__container align-items-end col-9 col-lg-11 c-nav__container">
+                <input type="checkbox" class="c-nav__toggle">
+                <span class="c-nav__bar c-nav__bar--top"></span>
+                <span class="c-nav__bar c-nav__bar--mid"></span>
+                <span class="c-nav__bar c-nav__bar--bottom"></span>
+  
+                <ul class="c-nav__list d-flex">
+                  <li class="c-nav__listitem">
+                    <a href="index.html" class="c-nav__link">Home</a>
+                  </li>
+                  <li class="c-nav__listitem">
+                    <a href="diensten.html" class="c-nav__link">Services</a>
+                  </li>
+                  <li class="c-nav__listitem">
+                    <a href="cases.html" class="c-nav__link ">Cases</a>
+                  </li>
+                  <li class="c-nav__listitem">
+                    <a href="about.html" class="c-nav__link c-nav__link--active">About us</a>
+                  </li>
+                  <li class="c-nav__listitem">
+                    <a href="jobs.html" class="c-nav__link">Jobs</a>
+                  </li>
+                  <li class="c-nav__listitem">
+                    <a href="contact" class="c-nav__link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </nav>
+
     <section class="c-about">
         <div class="container">
             <div class="row">
@@ -136,7 +176,7 @@
                 <div class="col-lg-9">
                     <div class="c-aboutweichie__content">
                         <p class="c-aboutweichie__content--subtitle">A little backstory</p>
-                        <h1 class="c-aboutweichie__content--title">About Weichie.com</h1>
+                        <h5 class="c-aboutweichie__content--title">About Weichie.com</h5>
                         <p class="c-aboutweichie__content--paraph">Digital Agency in Brussels & New York</p>
 
                         <p>
@@ -151,7 +191,7 @@
                             Are you in need of a new website or webshop or simply want to upgrade your current, old website? We’ve got your back!
                         </p>
 
-                        <p>
+                        <p class="c-aboutweichie__content--last">
                             We work with other founders, freelancers, consultants, and entrepreneurs to help solve business problems and challenges.
                         </p>
 
@@ -161,6 +201,57 @@
             </div>
         </div>
     </section>
+
+    <footer class="c-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <img class="img-fluid" src="img/weichie-letter-logo-black.png" alt="logo" />
+            </div>
+            <div class="col-6 offset-1">
+              <div class="c-footer__nav">
+                <ul class="c-footer__navlist">
+                  <li class="c-footer__navitem"><a href="#" class="c-footer__navlink">Home</a></li>
+                  <li class="c-footer__navitem"><a href="diensten.html" class="c-footer__navlink">Services</a></li>
+                  <li class="c-footer__navitem"><a href="cases.html" class="c-footer__navlink">Cases</a></li>
+                  <li class="c-footer__navitem"><a href="about.html" class="c-footer__navlink c-footer__navlink--active">About us</a></li>
+                  <li class="c-footer__navitem"><a href="jobs.html" class="c-footer__navlink ">Jobs</a></li>
+                  <li class="c-footer__navitem"><a href="contact.html" class="c-footer__navlink">Contact</a></li>
+                </ul>
+              </div>
+              <div class="c-footer__newsletter text-center">
+                <h4>subscribe to our newsletter</h4>
+                <form class="c-footer__form form mb-3">
+                  <input type="email" class="form-control c-footer__formfield" id="emailInput" required placeholder="Email adress" />
+                  <button type="submit" class="c-footer__formbtn"><i class="bi bi-arrow-right"></i></button>
+                </form>
+              </div>
+            </div>
+            <div class="col-2 offset-1">
+              <div class="c-footer__contact">
+                <p>
+                  <strong>Contact</strong> <br />
+                  +32 469 129 449 <br />
+                  hello@weichie.com
+                </p>
+                <p>
+                  Sint-Lazaruslaan 4 <br />
+                  1210 Brussels
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 text-center c-footer__bottom">&copy; Weichie.com 2022 - This website is a school assignment and is by no means affiliated with Weichie.com</div>
+          </div>
+        </div>
+        <div class="c-footer__socials">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-linkedin"></i>
+        </div>
+        <div class="c-footer__bgshape"></div>
+      </footer>
     
 </body>
 </html>

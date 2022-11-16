@@ -46,7 +46,7 @@ h1 {
 }
 
 header {
-  height: 80vh;
+  height: 60vh;
   background-color: $color-black;
   color: $color-white;
   text-align: center;
@@ -57,9 +57,10 @@ header {
     object-fit: cover;
     width: 100%;
     height: 80vh;
-    margin-top: 5rem;
+    margin-top: -3rem;
   }
   h1 {
+    // margin-top: ;
     font-size: 4rem;
     position: relative;
     z-index: 2;
@@ -78,7 +79,7 @@ header {
     font-size: 2rem;
   }
   .c-headertext {
-    margin-top: 10rem;
+    margin-top: 2rem;
   }
   .c-headerarrow {
     position: absolute;
