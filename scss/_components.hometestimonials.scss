@@ -1,5 +1,18 @@
 .c-hometestimonials {
 
+    &__img {
+        height: 476px;
+        width: 35%;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("../img/hometestimonialsimg.png");
+        margin-right: 2rem;
+
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+    }
+
     &__title {
         margin: 3rem;
         position: relative;
