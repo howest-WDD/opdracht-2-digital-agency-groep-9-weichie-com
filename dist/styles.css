@@ -1,9 +1,9 @@
 /* Error: Can't find stylesheet to import.
  *    ,
- * 28 | @import "components.jobsteam.scss";
+ * 24 | @import "components.jobsteam.scss";
  *    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^
  *    '
- *   scss\styles.scss 28:9  root stylesheet */
+ *   scss\styles.scss 24:9  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 28 \2502  @import \"components.jobsteam.scss\";\d\a    \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\styles.scss 28:9  root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 24 \2502  @import \"components.jobsteam.scss\";\d\a    \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\styles.scss 24:9  root stylesheet";
 }
