@@ -1,1 +1,98 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-size: 1rem;
+  font-family: "Crimson Text", serif;
+  color: $color-black;
+  background-color: $color-light;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Anton", sans-serif;
+}
+
+h1 {
+  position: relative;
+  z-index: 2;
+  &::before {
+    content: "";
+    width: 12rem;
+    height: 1.8125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $color-blue;
+    z-index: -1;
+  }
+}
+
+header {
+  height: 85vh;
+  background-color: $color-black;
+  color: $color-white;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  //   z-index: 0;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 80vh;
+    margin-top: 5rem;
+  }
+  h1 {
+    font-size: 4rem;
+    position: relative;
+    z-index: 2;
+    &::before {
+      content: "";
+      width: 12rem;
+      height: 1.8125rem;
+      position: absolute;
+      bottom: 0;
+      right: 10rem;
+      background-color: $color-blue;
+      z-index: -1;
+    }
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .c-headertext {
+    margin-top: 10rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20rem;
+    height: 5rem;
+    background-color: $color-blue;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0.2rem;
+    height: 20vh;
+    background-color: $color-white;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
