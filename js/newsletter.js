@@ -40,10 +40,10 @@ const listenClose = function () {
 };
 
 const init = function () {
-
   sect = document.querySelector(".js-homeabout");
   inViewport.observe(sect);
   modal = document.querySelector(".js-newsletter");
+
   listenClose();
   togglearrow();
 };

@@ -1,0 +1,18 @@
+.u-hidden {
+  display: none;
+}
+
+.u-reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease-out;
+  &--absolute {
+    position: absolute;
+  }
+}
+
+.u-reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
