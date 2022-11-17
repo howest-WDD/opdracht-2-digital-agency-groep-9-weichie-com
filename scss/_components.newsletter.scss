@@ -124,4 +124,8 @@
 }
 .c-newsletter__animatearrowin {
   transform: translateX(-40rem);
+  .c-newsletter__arrow {
+    transform: rotate(-0deg);
+    transition: transform 1.1s;
+  }
 }
