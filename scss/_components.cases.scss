@@ -55,7 +55,7 @@
 .c-cases__div {
   animation-fill-mode: forwards;
   visibility: hidden;
-  overflow: hidden;
+  // display: none;
   &--1 {
     grid-area: 1 / 1 / 4 / 2;
     width: 398px;
@@ -339,4 +339,50 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.animate-pop {
+  animation-duration: 0.7s;
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.2);
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+    visibility: visible;
+  }
+}
+@keyframes animate-hand {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  50% {
+    transform: translate(3%, 6%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+.anim-delay-1 {
+  animation-delay: 0.4s;
+}
+.anim-delay-2 {
+  animation-delay: 0.6s;
+}
+.anim-delay-3 {
+  animation-delay: 0.8s;
+}
+.anim-delay-4 {
+  animation-delay: 1s;
+}
+.anim-delay-cta {
+  animation-delay: 1.2s;
 }
