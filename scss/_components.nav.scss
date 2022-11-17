@@ -1,10 +1,16 @@
 .c-nav {
-
+	z-index: 4;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 	background-color: $color-darkgrey;
-	position: relative;
+	position: sticky;
+	width: 100%;
+	top:0;
 
+
+	@include media-breakpoint-up(lg){
+		position: relative;
+	}
 	&--home {
 		background-color: $color-black;
 		border: none;
@@ -13,12 +19,13 @@
 	&__logo{
 
 		width: 50%;
-
+		
 		@include media-breakpoint-down(lg){
 			width: 35%;
 			left: 0;
 			justify-content: start;
 			flex-direction: row;
+			
 		}
 		
 		
@@ -36,7 +43,7 @@
 
 		@include media-breakpoint-down(lg) {
 			width: 18rem;
-			height: 30vh;
+			height: 35vh;
 			transition: ease-in-out;
 			background-color: rgba($color-darkgrey, 0.90);
 			flex-direction: column;
@@ -85,6 +92,8 @@
 		align-items: center;
 		@include media-breakpoint-down(lg){
 			margin-left: 5rem;
+			align-items:center;
+			justify-content: center;
 		}
 	}
 	&__link {
@@ -118,7 +127,8 @@
 				height: 0.9rem;
 				background-color: $color-blue;
 				@include media-breakpoint-down(lg) {
-					left: 0.7rem;
+					right: -0.7rem;
+					
 					
 				}
 			}
