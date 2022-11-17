@@ -13,6 +13,11 @@
   align-items: center;
   // transform: translateX(35rem);
   transition: transform 1s;
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
+  }
   &::after {
     content: "";
     width: 100%;
@@ -22,15 +27,28 @@
     bottom: -0.5rem;
     background-color: $color-blue;
     z-index: 20;
+    @include media-breakpoint-down(sm) {
+      top: 0;
+    }
   }
   &__content {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    @include media-breakpoint-down(sm) {
+      width: 90%;
+      justify-content: center;
+      margin: 0;
+      padding-top: 1rem;
+    }
   }
   &__input {
     width: 25rem;
     margin-left: 3rem;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      margin: 0;
+    }
   }
   &__form {
     display: flex;
@@ -79,6 +97,9 @@
     &:hover {
       color: $color-blue;
       cursor: pointer;
+    }
+    @include media-breakpoint-down(sm) {
+      display: none;
     }
   }
 }
