@@ -11,7 +11,7 @@
       width: 50%;
     }
   }
-  span {
+  &__titlespan {
     margin-left: 6rem;
   }
   &__imgcontainer {
@@ -37,5 +37,9 @@
     &--2 {
       width: 60%;
     }
+  }
+  &__textmarkup {
+    color: $color-blue;
+    font-weight: bolder;
   }
 }
