@@ -10,9 +10,15 @@
   &--absolute {
     position: absolute;
   }
+  &::after {
+    z-index: -1;
+  }
 }
 
 .u-reveal.active {
   transform: translateY(0);
   opacity: 1;
+  &::after {
+    z-index: -1;
+  }
 }
