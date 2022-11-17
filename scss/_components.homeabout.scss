@@ -13,6 +13,12 @@
   }
   &__titlespan {
     margin-left: 6rem;
+    @include media-breakpoint-only(lg) {
+      margin-left: 3rem;
+    }
+    @include media-breakpoint-only(xs) {
+      margin-left: 1rem;
+    }
   }
   &__imgcontainer {
     position: relative;
