@@ -10,9 +10,15 @@
     border-bottom: 2px solid $color-blue;
     padding-bottom: 2rem;
     margin-top: 1rem;
+    
     &:last-child {
       border: none;
     }
+    &:hover{
+      .c-homeblogs__imgcontainer::after{
+       transform: skew(0, -3deg);
+      }
+  }
   }
   &__img {
     width: 80%;
@@ -23,17 +29,45 @@
       height: 100%;
       object-fit: cover;
     }
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -1rem;
-      right: 0;
-      width: 5rem;
-      height: 10rem;
-      background-color: $color-blue;
-      z-index: 10;
+    
+    
+
+  }
+  &__btn{
+    top: 0.5rem;
+    @include media-breakpoint-down(md){
+      top: 0rem;
     }
   }
+  &__imgcontainer{
+    position: relative;
+    &::after{
+      content: "";
+      background: $color-blue;
+      width: 75%;
+      height: 6.25rem;
+      position: absolute;
+      z-index: -2;
+      bottom: 0;
+      display: flex;
+      transition: transform 0.3s ease;
+      transform-origin: bottom right;
+
+      @include media-breakpoint-only(lg){
+        width: 60%;
+        height: 6.25rem;
+        bottom: 1rem;
+      }
+      @include media-breakpoint-down(lg){
+        display: none;
+      }
+
+
+  
+  }
+
+  }
+
 }
 
 // @include media-breakpoint-only(md) {
