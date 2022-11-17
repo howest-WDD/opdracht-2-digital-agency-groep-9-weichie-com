@@ -1,50 +1,56 @@
 .c-teamcards {
-    margin-top: 15rem;
+  margin-top: 15rem;
+  width: 100%;
+  @include media-breakpoint-down(lg) {
+    margin-top: 10rem;
+  }
 
-    h1 {
-        position: relative;
-        font-size: 3.125rem;
-        margin-bottom: 2rem;
-        &::before{
-            content: "";
-            position: absolute;
-            width: 15rem;
-            height: 1.5625rem;
-            background-color: $color-blue;
-            bottom: 0;
-            left: 45%;
-            z-index: -1;
-        }
+  h1 {
+    position: relative;
+    font-size: 3.125rem;
+    margin-bottom: 2rem;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 15rem;
+      height: 1.5625rem;
+      background-color: $color-blue;
+      bottom: 0;
+      left: 45%;
+      z-index: -1;
+    }
+  }
+
+  p {
+    color: $color-darkgrey;
+  }
+
+  &__card {
+    &--img {
+      margin: 1rem;
+      width: 100%;
+      object-fit: cover;
     }
 
-    p {
-        color: $color-darkgrey;
+    &--content {
+      margin-top: 1rem;
+      position: relative;
+
+      h3,
+      p {
+        position: absolute;
+        left: 2.5rem;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        top: 25%;
+      }
+
+      p {
+        font-size: 1rem;
+        top: 45%;
+      }
     }
-
-    &__card {
-        
-        &--img {
-            margin: 1rem;
-        }
-
-        &--content {
-            margin-top: 1rem;
-            position: relative;
-
-            h3, p {
-                position: absolute;
-                left: 2.5rem;
-            }
-
-            h3 {
-                font-size: 1.25rem;
-                top: 25%;
-            }
-
-            p {
-                font-size: 1rem;
-                top: 45%;
-            }
-        }
-    }
+  }
 }

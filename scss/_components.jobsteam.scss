@@ -1,5 +1,9 @@
 .c-jobsteam {
   margin-top: 5rem;
+  margin-bottom: 15rem;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 10rem;
+  }
   &__imgtop {
     position: relative;
     @include media-breakpoint-down(lg) {
@@ -44,6 +48,17 @@
     justify-content: center;
     align-items: center;
     margin-top: 10rem;
+    position: relative;
+  }
+
+  &__openpositions {
+    position: absolute;
+    right: calc(50% - 6rem);
+    transform: translateX(50%);
+    bottom: 1.5rem;
+    color: $color-black;
+    font-family: neuzeit-grotesk, sans-serif;
+    font-size: 1.2rem;
   }
 
   &__arrowshape {
