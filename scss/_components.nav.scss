@@ -4,11 +4,10 @@
 	padding-bottom: 0.5rem;
 	background-color: $color-darkgrey;
 	position: relative;
-	&__container{
-		margin-top: 0rem;
-	}
+
 	&--home {
 		background-color: $color-black;
+		border: none;
 	}
 
 	&__logo{
@@ -16,7 +15,7 @@
 		width: 50%;
 
 		@include media-breakpoint-down(lg){
-			width: 50%;
+			width: 35%;
 			left: 0;
 			justify-content: start;
 			flex-direction: row;
@@ -27,7 +26,7 @@
 	&__container {
 		display: flex;
 		flex-direction: column;
-		
+		margin-top: 0rem;
 		position: relative;
 	}
 	&__list {
@@ -37,19 +36,32 @@
 
 		@include media-breakpoint-down(lg) {
 			width: 18rem;
-			height: 100vh;
+			height: 30vh;
 			transition: ease-in-out;
-			background-color: rgba($color-darkgrey, 0.75);
+			background-color: rgba($color-darkgrey, 0.90);
 			flex-direction: column;
-			text-align: center;
+			text-align: justify;
+			
 			justify-content: start;
-			padding-left: 0;
-			z-index: 200;
+			z-index: 1;
 			padding-top: 6rem;
 			position: fixed;
 			top: 0;
 			right: 0;
-			transform: translateX(300px);
+			transform: translatex(300px);
+			transition: transform 0.4s;
+			
+			&::before{
+				content: "";
+				position: absolute;
+				width: 5px;
+				height: 18vh;
+				background-color: $color-blue;
+				margin-left: 3rem;
+				margin-top: -1rem;
+			}
+			
+
 
 			& > .c-nav__item {
 				margin: 1rem 0;
@@ -66,41 +78,55 @@
 		}
 	}
 	&__listitem {
-		
+		margin-right: 3.5rem;
+		&:last-child{
+			margin-right: 0;
+		}
 		align-items: center;
-		padding-right: 4rem;
+		@include media-breakpoint-down(lg){
+			margin-left: 5rem;
+		}
 	}
 	&__link {
 		z-index: 100;
 		font-size: 1.375rem;
 		color: $color-lightgrey;
+		font-size: 1rem;
+
+		@include media-breakpoint-down(lg){
+			font-size: 1rem;
+		}
 
 		&:hover {
-			color: $color-white;
+			color: $color-blue;
 		}
 		&--active {
 			color: $color-white;
 			position: relative;
 			z-index: 2;
 			display: block;
+			&:hover{
+				color: $color-white;
+			}
 			&::before {
 				z-index: -1;
 				position: absolute;
 				content: "";
 				bottom: 0rem;
 				left: 1rem;
-				width: 3.125rem;
-				height: 1rem;
+				width: 2.5rem;
+				height: 0.9rem;
 				background-color: $color-blue;
 				@include media-breakpoint-down(lg) {
-					left: 7rem;
+					left: 0.7rem;
+					
 				}
 			}
 		}
 	}
 	&__bar {
 		
-		z-index: 8000;
+		z-index: 5;
 		display: block;
 		width: 2rem;
 		height: 0.2rem;
@@ -114,14 +140,17 @@
 		}
 
 		&--top {
+			
 			transform-origin: 0;
 		}
 
 		&--mid {
+			
 			opacity: 100;
 		}
 
 		&--bottom {
+			
 			transform-origin: 0 100%;
 		}
 	}
@@ -132,7 +161,7 @@
 		cursor: pointer;
 		position: absolute;
 		opacity: 0;
-		z-index: 399;
+		z-index: 6;
 
 		@include media-breakpoint-up(lg) {
 			display: none;
