@@ -9,10 +9,21 @@
             z-index: -2;
             background-color: $color-blue;
             content: "";
-            top: 1.2rem;
-            left: 21rem;
-            width: 11rem;
+            top: 1.7rem;
+            left: 17rem;
+            width: 15rem;
             height: 1.7rem;
+
+            @include media-breakpoint-down(sm){
+                left: 18rem;
+                width: 10rem;
+                height: 1.7rem;
+                top: 1.7rem;
+            }
+            @include media-breakpoint-down(md){
+                display: none;
+            }
+
 
         }
     
