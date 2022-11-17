@@ -1,62 +1,65 @@
 .c-aboutweichie {
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+  margin-top: 10rem;
+  padding-bottom: 10rem;
 
-    width: 100%;
-    height: auto;
-    padding: 5rem 0 5rem;
-    background-color: $color-black;
+  width: 100%;
+  height: auto;
+  padding: 5rem 0 5rem 0;
+  background-color: $color-black;
 
-    position: relative;
+  position: relative;
+  
 
-    &::before{
-        content: "";
-        position: absolute;
-        width: 12.5rem;
-        height: 3.125rem;
-        background-color: $color-blue;
-        top: -1.5625rem;
-        right: 0;
-        z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 12.5rem;
+    height: 3.125rem;
+    background-color: $color-blue;
+    top: -1.5625rem;
+    right: 0;
+    z-index: 1;
+  }
+
+  // &::after{
+  //     content: "";
+  //     position: absolute;
+  //     width: 12.5rem;
+  //     height: 3.125rem;
+  //     background-color: $color-blue;
+  //     bottom: -1.5625rem;
+  //     left: 0;
+  //     z-index: 1;
+  // }
+
+  &__img {
+    margin-top: 2rem;
+  }
+
+  &__content {
+    margin: 2rem 1rem 2rem 0;
+    color: $color-white;
+    // font-size: 1rem;
+
+    &--subtitle,
+    &--paraph {
+      font-family: neuzeit-grotesk, sans-serif;
+      font-size: 1.25rem;
     }
 
-    &::after{
-        content: "";
-        position: absolute;
-        width: 12.5rem;
-        height: 3.125rem;
-        background-color: $color-blue;
-        bottom: -1.5625rem;
-        left: 0;
-        z-index: 1;
+    &--subtitle {
+      text-transform: uppercase;
     }
 
-    &__img {
-        margin-top: 2rem;
+    &--title {
+    font-size: 3.125rem;
+    font-family: neuzeit-grotesk, sans-serif;
+    color: $color-white;
+    font-weight: 600;
     }
 
-    &__content {
-        margin: 2rem 1rem 2rem 0;
-        color: $color-white;
-        font-size: 1rem;
-
-        &--subtitle, &--paraph {
-            font-family: neuzeit-grotesk, sans-serif;
-            font-size: 1.25rem;
-        }
-
-        &--subtitle {
-            text-transform: uppercase;
-
-        }
-
-        &--title {
-            font-size: 3.125rem;
-        }
-
-        &--last {
-            margin-bottom: 3rem;
-        }
-
+    &--last {
+      margin-bottom: 3rem;
     }
+  }
 }

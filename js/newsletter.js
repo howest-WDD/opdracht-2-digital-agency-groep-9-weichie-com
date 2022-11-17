@@ -41,7 +41,10 @@ const listenClose = function () {
 
 const init = function () {
   sect = document.querySelector(".js-homeabout");
-  inViewport.observe(sect);
+  if (document.querySelector(".js-page-home")) {
+    inViewport.observe(sect);
+  }
+
   modal = document.querySelector(".js-newsletter");
 
   listenClose();

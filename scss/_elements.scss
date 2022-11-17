@@ -33,6 +33,7 @@ h1 {
   position: relative;
   z-index: 2;
   font-weight: 700;
+
   &::before {
     content: "";
     width: 12rem;
@@ -73,6 +74,7 @@ header {
     font-size: 4rem;
     position: relative;
     z-index: 2;
+
     &::before {
       content: "";
       width: 12rem;
@@ -121,4 +123,3 @@ header {
     transform: translateX(50%);
   }
 }
-
